@@ -1,0 +1,542 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>PSAT 8/9 Grammar Lock-In</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+/* Layout: an editor's blue-pencil study sheet. One reading column, sticky lesson bar, test-style serif for every example sentence, practice quiz at the end. */
+:root{
+  --paper:#F5F7FC; --card:#FFFFFF; --ink:#151C2E; --muted:#58627A; --line:#DCE1EE;
+  --blue:#2443C4; --blue-soft:#E6EBFB; --hl:#FFE27A; --hl-ink:#151C2E;
+  --good:#18774A; --good-soft:#E3F4EA; --bad:#B02A2A; --bad-soft:#FBE7E7;
+  --display:"Bricolage Grotesque", "Arial Narrow", system-ui, sans-serif;
+  --body:"Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  --test:"Source Serif 4", Georgia, "Times New Roman", serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0F1320; --card:#171D2D; --ink:#E6EAF4; --muted:#9BA4BA; --line:#2A3247;
+  --blue:#93A8FF; --blue-soft:#1F2948; --hl:#5C4C10; --hl-ink:#FFF3C4;
+  --good:#6AD39C; --good-soft:#123323; --bad:#F28B8B; --bad-soft:#3A1A1C; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0F1320; --card:#171D2D; --ink:#E6EAF4; --muted:#9BA4BA; --line:#2A3247;
+  --blue:#93A8FF; --blue-soft:#1F2948; --hl:#5C4C10; --hl-ink:#FFF3C4;
+  --good:#6AD39C; --good-soft:#123323; --bad:#F28B8B; --bad-soft:#3A1A1C; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16.5px;line-height:1.6}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--card)}
+.wrap{max-width:860px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;line-height:1.15;margin:0}
+p{margin:0}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px;border-radius:4px}
+
+/* Header */
+header{background:var(--card);border-bottom:1px solid var(--line)}
+header .wrap{padding-block:36px 28px;display:grid;gap:14px}
+.eyebrow{font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);font-weight:700}
+h1{font-size:clamp(2rem,5.5vw,3.1rem);font-weight:800;letter-spacing:-.01em}
+h1 .pencil{color:var(--blue)}
+.lede{color:var(--muted);max-width:62ch}
+.stem{font-family:var(--test);font-style:italic;background:var(--blue-soft);border-radius:8px;padding:10px 14px;max-width:62ch}
+.stem b{font-style:normal;font-family:var(--body);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);display:block;margin-bottom:2px}
+
+/* Lesson nav */
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--card);border-bottom:1px solid var(--line)}
+nav .wrap{overflow-x:auto;scrollbar-width:thin}
+nav ul{list-style:none;margin:0;padding:10px 0;display:flex;gap:6px;white-space:nowrap}
+nav a{display:block;text-decoration:none;font-size:14px;padding:6px 11px;border-radius:999px;color:var(--muted);border:1px solid var(--line)}
+nav a:hover{color:var(--blue);border-color:var(--blue)}
+nav a.quiz-link{background:var(--blue);color:var(--card);border-color:var(--blue);font-weight:700}
+
+main .wrap{padding-block:28px 64px;display:grid;gap:44px}
+section{display:grid;gap:14px;scroll-margin-top:70px}
+.num{font-family:var(--display);font-weight:800;color:var(--blue);font-size:15px;letter-spacing:.04em}
+h2{font-size:clamp(1.45rem,3.6vw,1.85rem);font-weight:800}
+h3{font-size:1.08rem;font-weight:600;margin-top:6px}
+.rule{font-weight:700;border-left:4px solid var(--blue);padding:4px 0 4px 14px;max-width:62ch}
+section > p, section > ul, section > ol{max-width:66ch}
+ul,ol{margin:0;padding-left:1.3em;display:grid;gap:4px}
+
+/* Example sentences */
+.ex{display:grid;gap:8px}
+.ex div{font-family:var(--test);font-size:17px;display:grid;grid-template-columns:28px 1fr;align-items:baseline;gap:6px}
+.ex .ok::before{content:"✓";color:var(--good);font-family:var(--body);font-weight:700}
+.ex .no::before{content:"✗";color:var(--bad);font-family:var(--body);font-weight:700}
+.ex .no span{text-decoration:line-through;text-decoration-color:var(--bad);text-decoration-thickness:1.5px}
+.ex small{grid-column:2;font-family:var(--body);color:var(--muted);font-size:14px}
+mark{background:var(--hl);color:var(--hl-ink);padding:0 3px;border-radius:3px}
+
+.trap{background:var(--bad-soft);border-radius:10px;padding:12px 16px;max-width:66ch}
+.trap b,.tip b{font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;display:block;margin-bottom:2px}
+.trap b{color:var(--bad)}
+.tip{background:var(--good-soft);border-radius:10px;padding:12px 16px;max-width:66ch}
+.tip b{color:var(--good)}
+
+/* Tables */
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--card)}
+table{border-collapse:collapse;width:100%;min-width:520px;font-size:15px}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:none}
+th{font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:var(--paper)}
+td.s{font-family:var(--test);font-size:16px}
+td .y{color:var(--good);font-weight:700}
+td .n{color:var(--bad);font-weight:700}
+.mark-col{font-family:var(--test);font-size:22px;font-weight:600;color:var(--blue);width:60px;text-align:center}
+
+/* Decision split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.split > div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:grid;gap:6px;align-content:start;min-width:0}
+.split h3{margin:0;font-size:1rem}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-family:var(--test);font-size:15px;border-radius:6px;padding:2px 9px;border:1px solid var(--line)}
+.chip.y{border-color:var(--good);color:var(--good)}
+.chip.n{border-color:var(--bad);color:var(--bad);text-decoration:line-through}
+@media (max-width:620px){.split{grid-template-columns:1fr}}
+
+.checklist{counter-reset:c;list-style:none;padding:0;display:grid;gap:8px}
+.checklist li{counter-increment:c;display:grid;grid-template-columns:34px 1fr;gap:8px;align-items:baseline;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px}
+.checklist li::before{content:counter(c);font-family:var(--display);font-weight:800;color:var(--blue);font-size:18px}
+
+/* Quiz */
+#quiz{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 20px;display:grid;gap:16px}
+.qtop{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;font-size:14px;color:var(--muted)}
+.score{font-weight:700;color:var(--ink);font-variant-numeric:tabular-nums}
+.dots{display:flex;flex-wrap:wrap;gap:5px}
+.dot{width:26px;height:26px;border-radius:50%;border:1px solid var(--line);background:var(--paper);font-size:11.5px;color:var(--muted);cursor:pointer;padding:0;font-variant-numeric:tabular-nums}
+.dot.cur{border-color:var(--blue);color:var(--blue);font-weight:700}
+.dot.r{background:var(--good);border-color:var(--good);color:var(--card)}
+.dot.w{background:var(--bad);border-color:var(--bad);color:var(--card)}
+.qtext{font-family:var(--test);font-size:18px;line-height:1.7}
+.blank{display:inline-block;min-width:4.5em;border-bottom:2px solid var(--blue);background:var(--hl);color:var(--hl-ink);border-radius:2px;height:1.2em;vertical-align:-0.15em}
+.qstem{font-size:14.5px;font-weight:700;color:var(--muted)}
+.opts{display:grid;gap:8px}
+.opt{display:grid;grid-template-columns:30px 1fr;align-items:center;gap:10px;text-align:left;font:inherit;font-family:var(--test);font-size:17px;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:10px 12px;cursor:pointer}
+.opt:hover:not(:disabled){border-color:var(--blue)}
+.opt .l{width:28px;height:28px;border-radius:50%;border:1px solid var(--muted);display:grid;place-items:center;font-family:var(--body);font-size:13px;font-weight:700}
+.opt.right{background:var(--good-soft);border-color:var(--good)}
+.opt.right .l{background:var(--good);border-color:var(--good);color:var(--card)}
+.opt.wrong{background:var(--bad-soft);border-color:var(--bad)}
+.opt.wrong .l{background:var(--bad);border-color:var(--bad);color:var(--card)}
+.opt:disabled{cursor:default}
+.fb{border-radius:10px;padding:12px 16px;display:grid;gap:6px;font-size:15.5px}
+.fb.r{background:var(--good-soft)} .fb.w{background:var(--bad-soft)}
+.fb .v{font-weight:700} .fb.r .v{color:var(--good)} .fb.w .v{color:var(--bad)}
+.fb .tag{font-size:13px;color:var(--muted)}
+.qnav{display:flex;gap:8px;justify-content:space-between}
+.btn{font:inherit;font-weight:700;font-size:15px;padding:9px 18px;border-radius:999px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer}
+.btn.pri{background:var(--blue);border-color:var(--blue);color:var(--card)}
+.btn:disabled{opacity:.4;cursor:default}
+.results{display:grid;gap:12px}
+.big{font-family:var(--display);font-weight:800;font-size:2.6rem;color:var(--blue);line-height:1}
+.miss{display:grid;gap:6px;padding:0;list-style:none}
+.miss li{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:8px 12px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+footer{color:var(--muted);font-size:13.5px;text-align:center;padding-block:0 32px}
+.pill{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--bad);background:var(--bad-soft);border-radius:999px;padding:2px 10px;margin-left:6px}
+.btn.sm{padding:5px 14px;font-size:13px}
+.qtop .right{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">PSAT 8/9 · Reading &amp; Writing · Standard English Conventions</div>
+    <h1>Grammar <span class="pencil">Lock-In</span></h1>
+    <p class="lede">Every grammar rule the PSAT 8/9 tests, in the order you should learn them. Read the 12 lessons, check the test-day list, then take the hard-mode quiz at the bottom: 23 new questions every time you open the page. About a quarter of Reading &amp; Writing questions test these rules, and they're the most learnable points on the test.</p>
+    <p class="stem"><b>When you see this question, use this page</b>Which choice completes the text so that it conforms to the conventions of Standard English?</p>
+  </div>
+</header>
+
+<nav aria-label="Lessons">
+  <div class="wrap"><ul>
+    <li><a href="#clauses">1 Clauses</a></li>
+    <li><a href="#joining">2 Joining sentences</a></li>
+    <li><a href="#commas">3 Commas</a></li>
+    <li><a href="#extra">4 Extra info</a></li>
+    <li><a href="#colons">5 ; : —</a></li>
+    <li><a href="#however">6 However</a></li>
+    <li><a href="#sva">7 Subject–verb</a></li>
+    <li><a href="#pronouns">8 Pronouns</a></li>
+    <li><a href="#verbs">9 Verbs</a></li>
+    <li><a href="#possess">10 Possessives</a></li>
+    <li><a href="#modifiers">11 Modifiers</a></li>
+    <li><a href="#transitions">12 Transitions</a></li>
+    <li><a href="#checklist">Test-day list</a></li>
+    <li><a href="#practice" class="quiz-link">Practice quiz</a></li>
+  </ul></div>
+</nav>
+
+<main><div class="wrap">
+
+<section id="clauses">
+  <div class="num">LESSON 1</div>
+  <h2>Clauses: the foundation of every punctuation question</h2>
+  <p>Almost every punctuation question is secretly asking one thing: <strong>what is on each side of the blank?</strong> Learn these three pieces and the rest gets easy.</p>
+  <div class="tbl"><table>
+    <tr><th>Piece</th><th>What it is</th><th>Example</th></tr>
+    <tr><td><strong>Independent clause</strong></td><td>Subject + verb + complete thought. Can stand alone as a sentence.</td><td class="s">Bees make honey.</td></tr>
+    <tr><td><strong>Dependent clause</strong></td><td>Has a subject and verb but starts with a word like <em>although, because, when, if, since, while, which, who</em>. Can't stand alone.</td><td class="s">Although bees make honey</td></tr>
+    <tr><td><strong>Phrase</strong></td><td>No subject–verb pair at all.</td><td class="s">after the storm · a salamander from Mexico</td></tr>
+  </table></div>
+  <div class="tip"><b>The cover test</b>Put your finger over the blank. Read the left side alone, then the right side alone. Ask: "Could this be its own sentence?" Your answer decides the punctuation.</div>
+</section>
+
+<section id="joining">
+  <div class="num">LESSON 2</div>
+  <h2>Joining two complete sentences</h2>
+  <p class="rule">When both sides are complete sentences, only five things can go between them.</p>
+  <div class="tbl"><table>
+    <tr><th class="mark-col">Mark</th><th>How it works</th><th>Example</th></tr>
+    <tr><td class="mark-col">.</td><td>Period. Always works.</td><td class="s">The storm ended. The sun came out.</td></tr>
+    <tr><td class="mark-col">;</td><td>Semicolon. Works exactly like a period.</td><td class="s">The storm ended; the sun came out.</td></tr>
+    <tr><td class="mark-col">, and</td><td>Comma + FANBOYS (<strong>f</strong>or, <strong>a</strong>nd, <strong>n</strong>or, <strong>b</strong>ut, <strong>o</strong>r, <strong>y</strong>et, <strong>s</strong>o). Needs both.</td><td class="s">The storm ended, and the sun came out.</td></tr>
+    <tr><td class="mark-col">:</td><td>Colon. Only when the second sentence explains or proves the first.</td><td class="s">The game was canceled: the field had flooded.</td></tr>
+    <tr><td class="mark-col">—</td><td>Single dash. Works like a colon.</td><td class="s">The game was canceled—the field had flooded.</td></tr>
+  </table></div>
+  <div class="split">
+    <div><h3>Both sides complete</h3><div class="chips"><span class="chip y">.</span><span class="chip y">;</span><span class="chip y">, + FANBOYS</span><span class="chip y">:</span><span class="chip y">—</span><span class="chip n">, alone</span><span class="chip n">nothing</span><span class="chip n">; and</span></div><p>A comma alone is a <strong>comma splice</strong>. Nothing at all is a <strong>run-on</strong>.</p></div>
+    <div><h3>One side incomplete</h3><div class="chips"><span class="chip y">,</span><span class="chip y">nothing</span><span class="chip n">;</span><span class="chip n">.</span></div><p>A semicolon or period here creates a <strong>fragment</strong>. Use a comma or no punctuation.</p></div>
+  </div>
+  <div class="ex">
+    <div class="no"><span>The Rosetta Stone was found in 1799, it helped scholars decode hieroglyphs.</span><small>Comma splice: two complete sentences joined by a comma alone.</small></div>
+    <div class="ok">The Rosetta Stone was found in 1799<mark>;</mark> it helped scholars decode hieroglyphs.</div>
+  </div>
+  <div class="trap"><b>Twin trick</b>A period and a semicolon do the same job. If two answer choices are identical except one has a period and the other a semicolon, they can't both be right, so <strong>neither is right</strong>. Cross out both.</div>
+</section>
+
+<section id="commas">
+  <div class="num">LESSON 3</div>
+  <h2>Commas: four jobs, four never-dos</h2>
+  <h3>The four jobs of a comma</h3>
+  <div class="ex">
+    <div class="ok">Bats sleep during the day<mark>,</mark> and they hunt at night.<small>1. Before FANBOYS joining two complete sentences.</small></div>
+    <div class="ok">Although the Roman Empire split<mark>,</mark> its eastern half survived.<small>2. After an introductory clause, phrase, or word (Although…, In 1440…, However…).</small></div>
+    <div class="ok">Marie Curie<mark>,</mark> who was born in Warsaw<mark>,</mark> won two Nobel Prizes.<small>3. Around extra (nonessential) information, always as a pair.</small></div>
+    <div class="ok">Plant cells have a cell wall<mark>,</mark> chloroplasts<mark>,</mark> and a large vacuole.<small>4. Between items in a list of three or more. The PSAT uses the comma before "and."</small></div>
+  </div>
+  <h3>Never put a comma…</h3>
+  <div class="ex">
+    <div class="no"><span>The students who volunteered last weekend, sorted 400 cans.</span><small>Between a subject and its verb, no matter how long the subject is.</small></div>
+    <div class="no"><span>The scientists discovered, a new species.</span><small>Between a verb and its object.</small></div>
+    <div class="no"><span>She found evidence, that the theory was wrong.</span><small>Before a "that" clause.</small></div>
+    <div class="no"><span>Mammals such as, whales and bats, nurse their young.</span><small>Right after "such as" or "including."</small></div>
+  </div>
+  <div class="tip"><b>Rule of thumb</b>Every comma needs a reason from the list above. If you can't name the job, the comma probably shouldn't be there. The answer with fewer commas is right more often than you'd expect.</div>
+</section>
+
+<section id="extra">
+  <div class="num">LESSON 4</div>
+  <h2>Extra information: open a pair, close the pair</h2>
+  <p class="rule">If you can delete it and the sentence still works and keeps its main meaning, it's extra. Set it off with a matching pair.</p>
+  <div class="split">
+    <div><h3>Allowed pairs</h3><div class="chips"><span class="chip y">, … ,</span><span class="chip y">— … —</span><span class="chip y">( … )</span></div></div>
+    <div><h3>Never mix</h3><div class="chips"><span class="chip n">, … —</span><span class="chip n">— … ,</span><span class="chip n">, … ;</span></div></div>
+  </div>
+  <div class="ex">
+    <div class="no"><span>The Silk Road—a network of trade routes, carried ideas as well as goods.</span><small>Opened with a dash, closed with a comma.</small></div>
+    <div class="ok">The Silk Road<mark>—</mark>a network of trade routes<mark>—</mark>carried ideas as well as goods.</div>
+  </div>
+  <h3>Titles and names</h3>
+  <div class="ex">
+    <div class="ok">The biologist Rachel Carson wrote about pesticides.<small>Title directly before the name: no commas. The name is essential (which biologist?).</small></div>
+    <div class="ok">Rachel Carson<mark>,</mark> a biologist<mark>,</mark> wrote about pesticides.<small>Description after the name: commas. The description is extra.</small></div>
+  </div>
+  <h3>Which vs. that</h3>
+  <p><em>Which</em> introduces extra information and takes commas. <em>That</em> introduces essential information and takes no commas.</p>
+  <div class="ex">
+    <div class="ok">The chloroplasts<mark>,</mark> which contain chlorophyll<mark>,</mark> capture sunlight.</div>
+    <div class="ok">The book that I borrowed is overdue.</div>
+  </div>
+</section>
+
+<section id="colons">
+  <div class="num">LESSON 5</div>
+  <h2>Semicolons, colons, and dashes</h2>
+  <div class="tbl"><table>
+    <tr><th class="mark-col">Mark</th><th>Before it</th><th>After it</th><th>Example</th></tr>
+    <tr><td class="mark-col">;</td><td>Complete sentence</td><td>Complete sentence</td><td class="s">Tomatoes have seeds; botanists call them fruits.</td></tr>
+    <tr><td class="mark-col">:</td><td>Complete sentence</td><td>A list, explanation, example, or quote</td><td class="s">The recipe needs three things: flour, eggs, and milk.</td></tr>
+    <tr><td class="mark-col">—</td><td>Single dash: like a colon. Pair: like commas around extra info.</td><td></td><td class="s">Bees dance—it shows other bees where flowers are.</td></tr>
+  </table></div>
+  <div class="ex">
+    <div class="no"><span>The recipe needs: flour, eggs, and milk.</span><small>"The recipe needs" is not a complete sentence, so no colon.</small></div>
+    <div class="no"><span>Photosynthesis happens in chloroplasts; which contain chlorophyll.</span><small>"which contain chlorophyll" is not a complete sentence, so no semicolon.</small></div>
+  </div>
+  <div class="tip"><b>Bonus semicolon job</b>In a list where the items already contain commas, semicolons separate the items: "We visited Austin, Texas; Denver, Colorado; and Boise, Idaho." This shows up rarely, but it does show up.</div>
+</section>
+
+<section id="however">
+  <div class="num">LESSON 6</div>
+  <h2>However, therefore, and their cousins</h2>
+  <p>Words like <em>however, therefore, moreover, consequently, thus, nevertheless, meanwhile, for example,</em> and <em>in fact</em> are <strong>not</strong> FANBOYS. A comma alone can't join two sentences with them.</p>
+  <div class="ex">
+    <div class="ok">Many people think tomatoes are vegetables<mark>; however,</mark> botanists classify them as fruits.<small>Between two complete sentences: semicolon (or period) before, comma after.</small></div>
+    <div class="ok">The results<mark>, however,</mark> were surprising.<small>In the middle of one sentence: commas on both sides.</small></div>
+    <div class="no"><span>Many people think tomatoes are vegetables, however, botanists classify them as fruits.</span><small>Comma splice. This is the most common "however" trap.</small></div>
+  </div>
+  <div class="tip"><b>How to decide</b>Cover the "however." Are the parts before and after it complete sentences? Then it needs a semicolon or period in front of it.</div>
+</section>
+
+<section id="sva">
+  <div class="num">LESSON 7</div>
+  <h2>Subject–verb agreement</h2>
+  <p class="rule">Find the real subject, then match the verb. Singular subject, singular verb (it <em>runs</em>). Plural subject, plural verb (they <em>run</em>).</p>
+  <ul>
+    <li><strong>Cross out the middle.</strong> Prepositional phrases (<em>of the coins, in the lab</em>) and extra info between commas never contain the subject.</li>
+    <li><strong>Always singular:</strong> each, every, one, either, neither, everyone, nobody. Also group nouns like <em>team, colony, collection, family</em>.</li>
+    <li><strong>"And" makes it plural:</strong> The cat and the dog <em>are</em> asleep.</li>
+    <li><strong>Watch science plurals:</strong> mitochondria, bacteria, and phenomena are plural.</li>
+  </ul>
+  <div class="ex">
+    <div class="ok">The collection <span style="text-decoration:line-through;color:var(--muted)">of ancient Greek coins</span> <mark>includes</mark> rare pieces.<small>The subject is "collection," not "coins."</small></div>
+    <div class="ok">Each <span style="text-decoration:line-through;color:var(--muted)">of the planets</span> <mark>travels</mark> in an elliptical orbit.</div>
+    <div class="ok">One <span style="text-decoration:line-through;color:var(--muted)">of the oldest maps</span> <mark>appears</mark> on a clay tablet.</div>
+  </div>
+  <div class="trap"><b>Trap</b>The PSAT puts a plural noun right before the verb to trick your ear. "The collection of coins <em>include</em>" sounds fine but is wrong.</div>
+</section>
+
+<section id="pronouns">
+  <div class="num">LESSON 8</div>
+  <h2>Pronouns and sound-alikes</h2>
+  <ul>
+    <li><strong>Agreement:</strong> a singular noun takes <em>it / its</em>. A plural noun takes <em>they / their</em>. "The colony relies on <em>its</em> queen," because one colony.</li>
+    <li><strong>Who</strong> is for people, <strong>which</strong> is for things.</li>
+  </ul>
+  <div class="tbl"><table>
+    <tr><th>Ownership</th><th>Contraction</th><th>Place / other</th></tr>
+    <tr><td class="s">its (the dog wagged <em>its</em> tail)</td><td class="s">it's = it is</td><td></td></tr>
+    <tr><td class="s">their (<em>their</em> journey)</td><td class="s">they're = they are</td><td class="s">there (over <em>there</em>)</td></tr>
+    <tr><td class="s">whose (<em>whose</em> book?)</td><td class="s">who's = who is</td><td></td></tr>
+    <tr><td class="s">your</td><td class="s">you're = you are</td><td></td></tr>
+  </table></div>
+  <div class="tip"><b>Expand the apostrophe</b>Read "it's" as "it is" in the sentence. "The colony relies on it is queen" makes no sense, so you need "its."</div>
+</section>
+
+<section id="verbs">
+  <div class="num">LESSON 9</div>
+  <h2>Verbs: form and tense</h2>
+  <h3>Every sentence needs a real main verb</h3>
+  <p>These forms <strong>cannot</strong> be the main verb of a sentence on their own: <em>-ing</em> words (producing), <em>to</em> + verb (to produce), and <em>having</em> + verb (having produced).</p>
+  <div class="ex">
+    <div class="no"><span>The mitochondria, often called the powerhouse of the cell, producing energy.</span><small>Fragment: there's no main verb.</small></div>
+    <div class="ok">The mitochondria, often called the powerhouse of the cell, <mark>produce</mark> energy.</div>
+  </div>
+  <h3>Match the time</h3>
+  <p>Look for time clues: dates (<em>In 1440</em>), words like <em>currently, recently, next year</em>, and the tense of the other verbs nearby.</p>
+  <div class="ex">
+    <div class="ok">In 1440, Gutenberg <mark>developed</mark> a printing press, which <mark>made</mark> books cheaper.</div>
+  </div>
+  <div class="trap"><b>Trap</b>A long subject with extra info in the middle makes you forget that the sentence still needs its verb. After cutting the middle, check: subject + verb?</div>
+</section>
+
+<section id="possess">
+  <div class="num">LESSON 10</div>
+  <h2>Possessives and plurals</h2>
+  <div class="tbl"><table>
+    <tr><th>Form</th><th>Meaning</th><th>Example</th></tr>
+    <tr><td class="s">student</td><td>one student</td><td class="s">A student asked a question.</td></tr>
+    <tr><td class="s">students</td><td>more than one, nothing owned</td><td class="s">The students left.</td></tr>
+    <tr><td class="s">student's</td><td>one student owns something</td><td class="s">The student's essay won.</td></tr>
+    <tr><td class="s">students'</td><td>several students own something</td><td class="s">The students' essays won.</td></tr>
+    <tr><td class="s">children's</td><td>irregular plural + 's</td><td class="s">The children's books are upstairs.</td></tr>
+  </table></div>
+  <div class="tip"><b>Two questions</b>1. Does it own the next word? If not, no apostrophe. 2. Is the owner one or many? One: <em>'s</em>. Many (ending in s): <em>s'</em>.</div>
+</section>
+
+<section id="modifiers">
+  <div class="num">LESSON 11</div>
+  <h2>Modifiers: who's doing the action?</h2>
+  <p class="rule">An opening phrase describes whatever noun comes right after the comma.</p>
+  <div class="ex">
+    <div class="no"><span>Walking to school, the rain soaked my backpack.</span><small>The rain wasn't walking to school.</small></div>
+    <div class="ok">Walking to school, <mark>I</mark> got my backpack soaked by the rain.</div>
+    <div class="no"><span>Having studied the fossil for months, it was concluded that it was a new species.</span><small>"It" didn't study the fossil.</small></div>
+    <div class="ok">Having studied the fossil for months, <mark>the researchers</mark> concluded that it was a new species.</div>
+  </div>
+  <div class="tip"><b>How it looks on the PSAT</b>The blank comes right after the opening phrase's comma. Ask "Who did that?" and pick the choice that starts with that person or thing.</div>
+</section>
+
+<section id="transitions">
+  <div class="num">LESSON 12</div>
+  <h2>Transitions</h2>
+  <p>Transition questions ask for "the most logical transition." Read the sentence <strong>before</strong> and the sentence <strong>after</strong>, decide the relationship yourself, and only then look at the choices.</p>
+  <div class="tbl"><table>
+    <tr><th>Relationship</th><th>Words</th><th>Ask yourself</th></tr>
+    <tr><td><strong>Add</strong></td><td>furthermore, moreover, in addition, similarly, likewise</td><td>Is it more of the same idea?</td></tr>
+    <tr><td><strong>Contrast</strong></td><td>however, nevertheless, by contrast, instead, still</td><td>Does it go against what came before?</td></tr>
+    <tr><td><strong>Cause → effect</strong></td><td>therefore, as a result, consequently, thus, so</td><td>Is it caused by what came before?</td></tr>
+    <tr><td><strong>Example</strong></td><td>for example, for instance, specifically</td><td>Is it a specific case of the idea?</td></tr>
+    <tr><td><strong>Sequence</strong></td><td>first, then, subsequently, finally</td><td>Is it the next step in time?</td></tr>
+    <tr><td><strong>Restate / sum up</strong></td><td>in other words, that is, in short, ultimately</td><td>Is it saying the same thing more clearly?</td></tr>
+  </table></div>
+  <div class="trap"><b>Trap</b>Words in the same row mean nearly the same thing. If two choices are both "add" words, neither is likely right, because the test can't have two correct answers.</div>
+</section>
+
+<section id="checklist">
+  <div class="num">TEST DAY</div>
+  <h2>The 10-step grammar checklist</h2>
+  <ol class="checklist">
+    <li><span><strong>Compare the choices first.</strong> What changes between them (commas? verb? apostrophe?) tells you which rule is being tested.</span></li>
+    <li><span><strong>Read the whole sentence,</strong> not just the words around the blank.</span></li>
+    <li><span><strong>Cover the blank.</strong> Complete on both sides? Use . ; , + FANBOYS : or —. Not complete? Use a comma or nothing.</span></li>
+    <li><span><strong>Period and semicolon are twins.</strong> If both appear in otherwise identical choices, cross out both.</span></li>
+    <li><span><strong>Open a pair, close the pair.</strong> Match commas with commas and dashes with dashes.</span></li>
+    <li><span><strong>Never split a subject from its verb</strong> with a single comma.</span></li>
+    <li><span><strong>Cross out the middle</strong> to find the real subject, then match the verb.</span></li>
+    <li><span><strong>Expand apostrophes:</strong> it's = it is, they're = they are.</span></li>
+    <li><span><strong>Opening phrase?</strong> The noun right after the comma must be the one doing the action.</span></li>
+    <li><span><strong>When in doubt, fewer commas.</strong> Every comma needs a job.</span></li>
+  </ol>
+</section>
+
+<section id="practice">
+  <div class="num">PRACTICE</div>
+  <h2>Hard mode: 23 new questions every time</h2>
+  <p>Every question is at the hardest level: long sentences, hidden subjects, and wrong answers built from the traps in the lessons. Each time you open the page, or press New set, 23 questions are drawn at random from a bank of <span id="bankn">54</span> that covers every lesson, and the answer choices are shuffled. Click an answer to see right away whether it's correct and which rule it tests.</p>
+  <div id="quiz" aria-live="polite"></div>
+</section>
+
+</div></main>
+<footer>Built for PSAT 8/9 practice. Questions are original and written in the style of the test.</footer>
+
+<script>
+const S="Which choice completes the text so that it conforms to the conventions of Standard English?";
+const T="Which choice completes the text with the most logical transition?";
+const KEY="psatGrammarSeen2";
+const N=23;
+const TOPICS={
+  joining:["Joining sentences","joining"],
+  commas:["Commas","commas"],
+  extra:["Extra information","extra"],
+  colons:["Colons and dashes","colons"],
+  however:["However and therefore","however"],
+  sva:["Subject-verb agreement","sva"],
+  pronouns:["Pronouns","pronouns"],
+  verbs:["Verbs","verbs"],
+  possess:["Possessives","possess"],
+  modifiers:["Modifiers","modifiers"],
+  transitions:["Transitions","transitions"]
+};
+let n=0;
+const B=(t,q,c,w,e)=>({id:"q"+(n++),t,q,c,w,e});
+const BANK=[
+B("joining","Although the committee had reviewed the proposal twice and found no serious objections, several members remained uneasy about its long-term ___ they asked the architect to prepare a second cost estimate before the vote.","cost, so",["cost, therefore","cost, thus,","cost so"],"'So' is a FANBOYS conjunction, so a comma plus 'so' can join two complete sentences. 'Therefore' and 'thus' are conjunctive adverbs, which can't join sentences with only a comma, and using no punctuation at all creates a run-on."),
+B("joining","Many early telescopes produced images ringed with false color because their simple lenses bent different wavelengths of light by different ___ astronomers of the period often could not trust fine detail in what they saw.","amounts; as a result,",["amounts, as a result,","amounts as a result,","amounts; and as a result,"],"'As a result' is a transition, not a conjunction, so it can't join two complete sentences with a comma or with nothing. A semicolon works, and the transition then takes its own comma. A semicolon never pairs with 'and.'"),
+B("joining","Because the cell membrane is selectively ___ it allows oxygen and small nonpolar molecules to cross easily while blocking most ions.","permeable,",["permeable;","permeable:","permeable"],"A dependent clause that opens a sentence takes a comma after it. A semicolon or colon needs a complete sentence before it, and 'Because the cell membrane is selectively permeable' is not one."),
+B("joining","The recipe calls for stale bread, which absorbs the broth without ___ fresh bread would collapse into paste.","disintegrating;",["disintegrating,","disintegrating","disintegrating; because"],"Before the blank is a complete sentence and after it is another, so a semicolon is the clean way to join them. A comma alone is a splice, no punctuation is a run-on, and 'because' after a semicolon leaves a dependent clause that can't stand alone."),
+B("joining","The first experiment produced exactly the result the team had predicted ___ the second, run under nearly identical conditions, contradicted it entirely.",", yet",["yet",", however,",", nevertheless,"],"'Yet' is a FANBOYS conjunction, so a comma plus 'yet' joins two complete sentences. 'However' and 'nevertheless' aren't FANBOYS words, so a comma can't join sentences with them, and 'yet' with no comma is a run-on."),
+
+B("commas","The conductor lifted her ___ and waited for the last cough in the audience to fade.","baton",["baton,","baton;","baton:"],"'Lifted her baton' and 'waited for the last cough' are two actions by one subject, 'the conductor.' When 'and' joins two verbs that share a subject, no punctuation goes before it."),
+B("commas","The students who had completed both the written examination and the laboratory ___ were exempt from the final project.","practical",["practical,","practical;","practical:"],"Never put a single punctuation mark between a subject and its verb, no matter how long the subject is. Here the subject is 'The students who had completed...practical' and the verb is 'were.'"),
+B("commas","Researchers analyzing the fossil's growth rings were surprised to ___ that each ring recorded a single day rather than a year.","discover",["discover,","discover;","discover:"],"'That each ring recorded a single day' is what they discovered, so it completes the verb. Don't separate a verb from what it reports with a comma, semicolon, or colon."),
+B("commas","Three novelists spoke at the festival. The novelist ___ drew on her years as a ship's nurse to write her best-known book.","Dorothea Almeida",[", Dorothea Almeida,",", Dorothea Almeida","Dorothea Almeida,"],"With three novelists at the festival, the name is needed to tell which one the sentence means, so it's essential and takes no commas. Commas would mark it as extra information you could delete."),
+B("commas","When the archivist finally opened the sealed crate that had sat unexamined in the museum's basement for forty ___ she found letters written in three languages.","years,",["years","years;","years:"],"A long introductory clause still takes a comma at its end. The comma goes right before the main clause 'she found...,' not after 'crate.'"),
+
+B("extra","Krill ___ are eaten by whales, seals, and penguins.",", small crustaceans that swarm in the Southern Ocean,",["—small crustaceans that swarm in the Southern Ocean,",", small crustaceans that swarm in the Southern Ocean—",", small crustaceans that swarm in the Southern Ocean"],"Extra information needs a matching pair on both sides: comma and comma, or dash and dash. Mixing a comma with a dash, or opening with a comma and never closing it, leaves the pair broken."),
+B("extra","The observatory owns two telescopes, one installed in 1998 and the other in 2011. The telescope ___ is scheduled for repairs next spring.","that was installed in 1998",[", which was installed in 1998,",", that was installed in 1998,","that was installed in 1998,"],"With two telescopes, 'that was installed in 1998' is needed to tell which one is being repaired. Essential information takes 'that' and no commas. A comma before the verb 'is' would split the subject from its verb."),
+B("extra","The festival committee has voted to retire its only trophy. The trophy ___ will be displayed in the town library.",", which was first awarded in 1954,",[", which was first awarded in 1954","which was first awarded in 1954,",", that was first awarded in 1954,"],"There's only one trophy, so 'which was first awarded in 1954' is extra information. It takes 'which' and a pair of commas. Missing either comma breaks the pair, and 'that' is never set off with commas."),
+B("extra","The bridge ___ remains the longest in the region.",", completed in 1932 after nine years of construction,",[", completed in 1932 after nine years of construction","completed in 1932 after nine years of construction,","—completed in 1932 after nine years of construction,"],"The phrase 'completed in 1932 after nine years of construction' is extra information. It needs a matching pair of commas, so the sentence still works when you remove it."),
+B("extra","Only some of the company's employees completed the safety training. The employees ___ will receive a bonus.","who completed the safety training",[", who completed the safety training,",", who completed the safety training","who completed the safety training,"],"'Who completed the safety training' tells you which employees get the bonus, so it's essential and takes no commas. Commas would suggest that all the employees completed the training."),
+
+B("colons","Kenji's research focused on a single ___ some bacteria survive antibiotics that kill their relatives.","puzzle:",["puzzle,","puzzle","puzzle; which"],"A colon can follow a complete sentence to introduce an explanation. 'Kenji's research focused on a single puzzle' is complete, and what follows explains it. A comma alone is a splice, no punctuation is a run-on, and 'which' after a semicolon leaves a fragment."),
+B("colons","The first-aid kit ___ a compass, a signal mirror, and a whistle.","includes",["includes:","includes;","includes,"],"'The first-aid kit includes' is not a complete sentence, because the verb still needs its object. Never put a colon, semicolon, or comma between a verb and its object."),
+B("colons","Scientists have identified a surprising trait shared by all three ___ they sleep with only half of their brains at a time.","species:",["species,","species","species; which"],"A colon can follow a complete sentence to introduce an explanation, and 'they sleep with only half of their brains' explains the trait. The others make a splice, a run-on, or a fragment."),
+B("colons","The lab ordered three ___ ethanol, acetone, and methanol.","reagents:",["reagents;","reagents.","reagents were"],"A colon can introduce a list after a complete sentence. A semicolon needs a complete sentence on both sides, a period leaves a fragment, and 'were' breaks the sentence."),
+
+B("however","The first trial produced promising results in every age group. The results for the oldest patients ___ showed almost no improvement.",", however,",[", however","however,","; however,"],"'However' sits in the middle of one sentence, so it takes a comma on each side. A semicolon is only for joining two complete sentences."),
+B("however","Dr. Okafor's team expected the compound to dissolve in ___ it remained solid even after an hour of stirring.","water; however,",["water, however,","water however,","water, but,"],"Both sides are complete sentences, and 'however' isn't a FANBOYS word, so a comma can't join them. Use a semicolon before it and a comma after it. 'But' can join with a comma, but it never takes a comma after it."),
+B("however","Wood is a poor conductor of ___ wooden handles are common on cookware.","heat; therefore,",["heat, therefore,","heat therefore,","heat, so,"],"'Therefore' is not a FANBOYS word, so it can't join two sentences with just a comma. Use a semicolon before it and a comma after it. 'So' can join with a comma, but it never takes a second comma."),
+B("however","The museum's glass collection ___ is among the largest in the world.",", in fact,",[", in fact","in fact,","; in fact,"],"'In fact' interrupts the sentence between the subject and the verb, so it's set off with a comma on each side. A semicolon would need a complete sentence before it."),
+B("however","Several nocturnal animals have evolved remarkable ___ the barn owl can locate a mouse in total darkness by sound alone.","senses; for example,",["senses, for example,","senses for example,","senses; and, for example,"],"Two complete sentences are joined, and 'for example' isn't a conjunction. Use a semicolon before it and a comma after it. A comma alone is a splice, nothing is a run-on, and a semicolon never pairs with 'and.'"),
+
+B("sva","The collection of ancient Greek coins, along with several Roman medallions and a bronze mirror recovered from the same shipwreck, ___ now housed in the museum's east wing.","is",["are","were","have been"],"Cross out everything between the commas. 'Along with' doesn't make the subject plural. The subject is 'collection,' which is singular, so the verb is 'is.'"),
+B("sva","Among the most significant discoveries of the expedition ___ a cache of letters written by the ship's cook.","was",["were","are","have been"],"The sentence is inverted, so the verb comes before its subject. Flip it around: 'A cache of letters...was among the discoveries.' The subject is 'cache,' which is singular, not 'discoveries.'"),
+B("sva","Neither the director nor the actors ___ aware that the studio had already canceled the production.","were",["was","is","has been"],"With 'neither...nor,' the verb agrees with the subject closest to it. That's 'actors,' which is plural, and the past tense matches 'had already canceled.'"),
+B("sva","The number of studies linking sleep to memory ___ grown rapidly over the past decade.","has",["have","is","are"],"'The number' is singular (one number), so it takes 'has.' Compare 'A number of studies have shown...,' where 'a number of' means 'several' and is plural."),
+B("sva","Dr. Alvarez is one of the few biologists who ___ studied the migration patterns of deep-sea squid.","have",["has","is","having"],"'Who' refers back to 'biologists,' which is plural, so the verb is 'have.' The phrase 'one of the few biologists' points to a group, and 'who' describes the group."),
+
+B("pronouns","The committee, composed of eight volunteers, announced ___ decision on Monday.","its",["their","it's","they're"],"'Committee' is one group, so the pronoun is singular: 'its.' 'Volunteers' is the nearest plural noun, which is the trap. 'It's' means 'it is,' and 'they're' means 'they are.'"),
+B("pronouns","The award will go to the researcher ___ the panel believes has made the most significant contribution to the field.","who",["whom","whose","which"],"Ignore 'the panel believes.' What's left is '___ has made the most significant contribution,' where the missing word is the subject of 'has made.' Subjects take 'who.'"),
+B("pronouns","Researchers compared the migration routes of Arctic terns with ___ of the sooty shearwater.","those",["that","them","it"],"The pronoun stands in for 'routes,' which is plural, so it must be 'those.' That keeps the comparison logical: routes with routes."),
+B("pronouns","Students who want to improve their writing should read widely, because ___ can absorb how skilled authors build sentences.","they",["you","one","he"],"The sentence is about 'students' (third person, plural), so the pronoun stays 'they.' Switching to 'you' or 'one' shifts the point of view, and 'he' doesn't match a plural noun."),
+B("pronouns","Maya, ___ essay won first prize, was invited to read it aloud at the ceremony.","whose",["who's","who","whom"],"'Whose' shows possession: whose essay. 'Who's' means 'who is,' which doesn't fit, and 'who' or 'whom' can't be followed directly by 'essay.'"),
+
+B("verbs","By the time the rescue team reached the summit, the climbers ___ for nearly two days without food or shelter.","had been waiting",["have been waiting","will have been waiting","are waiting"],"The rescue team's arrival is in the past, and the waiting began before it. The past perfect ('had been waiting') shows an action that was already underway before another past event."),
+B("verbs","The satellite, launched in 2019 and designed to monitor Arctic sea ice, ___ data that scientists use to forecast shipping routes.","transmits",["transmitting","to transmit","that transmits"],"Cross out the phrase between the commas. 'The satellite ___ data' needs a main verb. An -ing word, 'to' + verb, and 'that' + verb can't be the main verb of the sentence."),
+B("verbs","If the engineers ___ the wiring earlier, they would have caught the fault before launch.","had tested",["would have tested","have tested","would test"],"This is a past 'if' situation that didn't happen, so the 'if' part takes 'had' + the past participle and the result takes 'would have' + the past participle. 'Would' never goes in the 'if' part."),
+B("verbs","In 1928, Alexander Fleming returned from vacation, noticed mold growing on a culture dish, and ___ that the bacteria around it had died.","realized",["realizes","has realized","will realize"],"The sentence tells a story in the past, so every action stays in the past tense: returned, noticed, realized."),
+B("verbs","To qualify for the finals, a swimmer must complete the course in under two minutes, finish no worse than third in the semifinal, and ___ a medical clearance.","obtain",["obtaining","having obtained","obtains"],"The three things a swimmer 'must' do form a parallel list: complete, finish, and ___. Each item uses the plain verb form after 'must,' so the last one is 'obtain.'"),
+
+B("possess","The board reviewed the two ___ financial records before approving the merger.","companies'",["company's","companies","companies's"],"Two companies own the records, so you need the plural possessive: an apostrophe after the 's' in 'companies.' 'Company's' means one company, and plain 'companies' shows no ownership."),
+B("possess","The museum's new exhibit celebrates the work of twelve women who classified stars at Harvard. It highlights the ___ contributions to modern astronomy.","women's",["womens'","woman's","womens"],"'Women' is already plural without an 's,' so its possessive adds apostrophe + s: 'women's.' 'Woman's' would mean only one woman."),
+B("possess","The company has announced that ___ closing two of its factories.","it's",["its","their","they're"],"Expand the contraction: 'The company has announced that it is closing two of its factories.' 'It's' means 'it is.' 'Its' shows possession and doesn't fit before 'closing.'"),
+B("possess","The two ___ who founded the lab both went on to win national awards.","scientists",["scientist's","scientists'","scientists's"],"Nothing belongs to the scientists in this sentence. The word is just a plural noun, so it takes no apostrophe. Apostrophes show ownership, not plurals."),
+B("possess","After repeating the experiment, the scientist found that the ___ data contradicted the original hypothesis.","experiment's",["experiments'","experiments","experiments's"],"Only one experiment was repeated, and the data belong to it, so use the singular possessive: 'experiment's.' 'Experiments'' would mean the data of several experiments."),
+
+B("modifiers","Walking along the shoreline at dawn, ___ just beyond the breakers.","the photographer spotted a pod of dolphins",["a pod of dolphins surfaced","the dolphins were seen by the photographer","a pod of dolphins appeared before the photographer"],"The opening phrase 'Walking along the shoreline' must describe the noun right after the comma. Only the photographer can walk. The other choices make dolphins the walkers."),
+B("modifiers","To qualify for the national tournament, ___.","a team must win the regional finals",["the regional finals must be won by a team","winning the regional finals is necessary","a regional title is required"],"'To qualify' needs a subject that can do the qualifying, which is a team. The other choices start with the finals, an action, or a title, and none of those can qualify."),
+B("modifiers","Simmering gently on the back burner for six hours, ___ filled the kitchen with the scent of cloves and star anise.","the stew",["the aroma","the chef","the family's anticipation"],"The stew is what simmers, so it has to come right after the comma. An aroma, a chef, and anticipation can't simmer on a burner."),
+B("modifiers","Unlike most mammals, ___.","the platypus lays eggs rather than giving birth to live young",["eggs are laid by the platypus rather than live young being born","the platypus's reproduction involves laying eggs rather than giving birth to live young","laying eggs rather than giving birth to live young is the platypus's way of reproducing"],"'Unlike most mammals' compares animals with animals, so the next noun must be an animal: the platypus. The other choices compare mammals with eggs, with reproduction, or with an action."),
+B("modifiers","As a lifelong chess player, ___.","Elena can recognize a familiar pattern within seconds",["Elena's intuition lets her recognize a familiar pattern within seconds","a familiar pattern can be recognized by Elena within seconds","recognizing a familiar pattern takes Elena only seconds"],"'As a lifelong chess player' describes a person, so the person must be the subject: Elena. In the other choices, the subject is her intuition, a pattern, or an action."),
+
+B("transitions","Aristotle claimed that heavier objects fall faster than lighter ones, and for nearly two thousand years few people questioned him. ___ Galileo's careful experiments with rolling balls on inclined planes showed that, without air resistance, all objects accelerate at the same rate.","However,",["Similarly,","For example,","As a result,"],"The first sentence describes an idea that went unchallenged. The second describes evidence that overturned it, so the relationship is contrast. 'However' signals contrast; the others signal similarity, an example, or a result."),
+B("transitions","The cheetah is often called the fastest land animal. ___ it can accelerate from zero to sixty miles per hour in about three seconds, faster than most sports cars.","In fact,",["However,","Instead,","Similarly,"],"The second sentence backs up and strengthens the first, so it needs a word that adds support. 'In fact' does that. 'However' and 'Instead' signal a contrast that isn't there, and 'Similarly' compares two separate things."),
+B("transitions","Octopuses can unscrew jar lids to reach food inside. ___ crows have been observed bending wire into hooks to pull food from narrow tubes.","Similarly,",["However,","Therefore,","In other words,"],"Both sentences give an example of an animal solving a problem to get food, so the second continues the same idea. 'Similarly' links two parallel examples."),
+B("transitions","Critics expected the new subway line to reduce traffic on the city's main bridge. ___ traffic on the bridge rose by eight percent in the first year.","Instead,",["Similarly,","For example,","Eventually,"],"The first sentence states an expectation, and the second states the opposite outcome. 'Instead' means 'rather than what was expected.' The other choices signal similarity, an example, or a later time."),
+B("transitions","The Tambora eruption of 1815 ejected so much ash that sunlight was measurably dimmed worldwide. ___ 1816 became known in Europe and North America as the 'year without a summer,' with frost recorded in July.","As a result,",["In contrast,","Previously,","Meanwhile,"],"The dimmed sunlight caused the cold year that followed, so the second sentence is an effect. 'As a result' shows cause and effect.")
+];
+function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));const t=a[i];a[i]=a[j];a[j]=t}return a}
+function readSeen(){try{const v=JSON.parse(localStorage.getItem(KEY)||"[]");return Array.isArray(v)?v:[]}catch(e){return[]}}
+function writeSeen(a){try{localStorage.setItem(KEY,JSON.stringify(a))}catch(e){}}
+function makeSet(){
+  const seen=new Set(readSeen());
+  let pool=shuffle(BANK.filter(q=>!seen.has(q.id)));
+  let fresh=true;
+  if(pool.length<N){pool=pool.concat(shuffle(BANK.filter(q=>seen.has(q.id))));fresh=false}
+  const picked=[],used=new Set();
+  Object.keys(TOPICS).forEach(t=>{const f=pool.find(q=>q.t===t);if(f){picked.push(f);used.add(f.id)}});
+  for(const q of pool){if(picked.length>=N)break;if(!used.has(q.id)){picked.push(q);used.add(q.id)}}
+  writeSeen(fresh?Array.from(seen).concat(picked.map(q=>q.id)):picked.map(q=>q.id));
+  return shuffle(picked).map(q=>{const o=shuffle([q.c].concat(q.w));return Object.assign({},q,{o:o,a:o.indexOf(q.c)})});
+}
+//--ui--
+const L="ABCD",box=document.getElementById("quiz");
+const bn=document.getElementById("bankn");if(bn)bn.textContent=BANK.length;
+let Q=makeSet(),cur=0,ans=new Array(Q.length).fill(null);
+const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;");
+const sc=()=>ans.reduce((k,v,i)=>k+(v===Q[i].a?1:0),0);
+function newSet(){Q=makeSet();ans=new Array(Q.length).fill(null);cur=0;draw()}
+function draw(){
+  const q=Q[cur],picked=ans[cur],done=picked!==null,answered=ans.filter(v=>v!==null).length;
+  const text=esc(q.q).replace("___",'<span class="blank" aria-label="blank"></span>');
+  const tp=TOPICS[q.t];
+  let h=`<div class="qtop"><span>Question ${cur+1} of ${Q.length} <span class="pill">Hard mode</span></span><span class="right"><span class="score">Score ${sc()} / ${answered}</span><button class="btn sm" id="ns">New set</button></span></div>
+  <div class="dots">${Q.map((x,i)=>{const v=ans[i];let c="dot";if(i===cur)c+=" cur";if(v!==null)c+=v===x.a?" r":" w";return `<button class="${c}" data-j="${i}" aria-label="Go to question ${i+1}">${i+1}</button>`}).join("")}</div>
+  <p class="qtext">${text}</p><p class="qstem">${q.t==="transitions"?T:S}</p>
+  <div class="opts">${q.o.map((o,k)=>{let c="opt";if(done){if(k===q.a)c+=" right";else if(k===picked)c+=" wrong"}return `<button class="${c}" data-k="${k}" ${done?"disabled":""}><span class="l">${L[k]}</span><span>${esc(o)}</span></button>`}).join("")}</div>`;
+  if(done){const ok=picked===q.a;h+=`<div class="fb ${ok?"r":"w"}"><span class="v">${ok?"Correct":"Not quite. The answer is "+L[q.a]+"."}</span><span>${esc(q.e)}</span><span class="tag">Rule: ${esc(tp[0])} · <a href="#${tp[1]}">Review this lesson</a></span></div>`}
+  const last=cur===Q.length-1;
+  h+=`<div class="qnav"><button class="btn" id="pv" ${cur===0?"disabled":""}>Back</button>${answered===Q.length&&last?`<button class="btn pri" id="rs">See results</button>`:`<button class="btn pri" id="nx" ${last?"disabled":""}>Next</button>`}</div>`;
+  box.innerHTML=h;
+  box.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{ans[cur]=+b.dataset.k;draw()});
+  box.querySelectorAll(".dot").forEach(b=>b.onclick=()=>{cur=+b.dataset.j;draw()});
+  document.getElementById("ns").onclick=newSet;
+  const pv=document.getElementById("pv");if(pv)pv.onclick=()=>{cur--;draw()};
+  const nx=document.getElementById("nx");if(nx)nx.onclick=()=>{cur++;draw()};
+  const rs=document.getElementById("rs");if(rs)rs.onclick=results;
+}
+function results(){
+  const s=sc(),miss={};
+  Q.forEach((q,i)=>{if(ans[i]!==q.a){const m=miss[q.t]=miss[q.t]||{n:0};m.n++}});
+  const keys=Object.keys(miss);
+  const msg=s===Q.length?"Perfect on hard mode. You're locked in.":s>=19?"Strong. Review the rules below and you're ready.":s>=14?"Good base. Go back to the lessons below, then try a new set.":"Spend time with the lessons below, then try a new set. These rules click fast with practice.";
+  box.innerHTML=`<div class="results"><div class="big">${s} / ${Q.length}</div><p>${msg}</p>${keys.length?`<p class="qstem">Rules to review</p><ul class="miss">${keys.map(k=>`<li><span>${esc(TOPICS[k][0])} · missed ${miss[k].n}</span><a href="#${TOPICS[k][1]}">Go to lesson</a></li>`).join("")}</ul>`:""}<div class="qnav"><button class="btn" id="rv">Review answers</button><button class="btn pri" id="rt">New set of 23</button></div></div>`;
+  document.getElementById("rv").onclick=()=>{cur=0;draw()};
+  document.getElementById("rt").onclick=newSet;
+}
+draw();
+
+</script>
+
+</body></html>
